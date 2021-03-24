@@ -33,7 +33,7 @@ router.get("/", function (req, res, next) {
         "https://www.gizmochina.com/wp-content/uploads/2019/03/Nokia-9-PureView-500x500.jpg",
     },
   ];
-  res.render("index", { products });
+  res.render("index", { products, admin: true });
 });
 
 module.exports = router;
